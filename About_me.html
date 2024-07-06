@@ -4,8 +4,69 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <main>
+       <aside>
+        <img src="./images/About_me_page_image.png" alt="">
+       </aside>
+       <article>
 
+        <p>
+            My name is Abhinay 
 
+        </p>
 
+       </article>
+       
+    </main>
 </body>
+
+  <style>
+
+body{
+    
+    background-color: rgba(43,43,42,255);
+}
+
+main 
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    grid-template-areas: "right left";
+   color: bisque;
+    aside{
+
+        grid-area: right;
+
+        display: flex;
+        justify-content: center;
+
+        img{
+            height: 85vh;
+            border-radius: 60px;
+            filter: brightness(80%);
+            box-shadow: 6px 0px 0px 4px black;
+            transform: rotate(-20deg);
+            margin-top: 4rem;
+            opacity: 0%;
+        }
+
+
+        }
+
+        
+    
+
+    article{
+        display: flex;
+        grid-area: left;
+        align-items: flex-start;
+        margin-top: 3rem;
+    }
+}
+
+
+</style>
+
+  
 </html>
